@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../unit-4-game/assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron" style="padding-top: 16px; padding-bottom: 16px;">
+        <div class="container">
+            <h3 class="display-2 text-center">Crystals Collector</h3>
+            <div class="row">
+                <div class="col-12 text-center"></div><br>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" style="font-size: 0.90em;">You will be given a random number at the
+                    start of the game. There are four crystals below. By clicking on a crystal you will add a specific
+                    amount of points to your total score.</div>
+                <div class="col-12 text-center" style="font-size: 0.90em;">You will win the game by matching your total
+                    score to the random number; you will lose the game if your total score goes above the random
+                    number.</div>
+                <div class="col-12 text-center" style="font-size: 0.90em;">The value of each crystal is hidden from you
+                    until you click on it. Each time when the game starts, the game will change the values of each
+                    crystal.</div>
+                <div class="col-12 text-center"></div><br>
+            </div>
+            <div class="row">
+                <div class="col-4 text-center" style="font-size: 2em;">Score</div>
+                <div class="col-4 text-center" style="font-size: 2em;">Wins</div>
+                <div class="col-4 text-center" style="font-size: 2em;">Losses</div>
+            </div>
+            <div class="row">
+                <div class="col-4 text-center" id="player-score" style="font-size: 2em;">0</div>
+                <div class="col-4 text-center" id="wins-msg" style="font-size: 2em;">0</div>
+                <div class="col-4 text-center" id="losses-msg" style="font-size: 2em;">0</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-center"><img id="C-A" src="../unit-4-game/assets/images/Crystal_A.png" alt="crystal-A"
+                    height="250" width="250"></div>
+            <div class="col-3 text-center"><img id="C-B" src="../unit-4-game/assets/images/Crystal_B.png" alt="crystal-B"
+                    height="250" width="250"></div>
+            <div class="col-3 text-center"><img id="C-C" src="../unit-4-game/assets/images/Crystal_C.png" alt="crystal-C"
+                    height="250" width="250"></div>
+            <div class="col-3 text-center"><img id="C-D" src="../unit-4-game/assets/images/Crystal_D.png" alt="crystal-D"
+                    height="250" width="250"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center"></div><br>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center"><span id="result-msg" style="font-size: 2em;"></span><span id="newgame-msg" style="font-size: 2em;"> </span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
